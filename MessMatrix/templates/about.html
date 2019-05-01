@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>About</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="contact.html"><strong>About</strong></span></a></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index">Home</a></li>
+          <li><a href="contact">Contact Us</a></li>
+          <li class="selected"><a href="about.html">About</a></li>
+          <li><a href="loginpage"> The Mess Login Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+
+      </div>
+
+        <div id="content">
+            <!-- insert the page content here -->
+            <p><h2><b>Who We Are</b></h2></p>
+            <h4><p>The Mess, is a software development team affiliated with the Spring 2019 Software Engineering course at the University of Mount Union.
+                We are developing an application called "The Mess Matrix" which is a software that allows users to have protected password by utilizing a
+                screen GUI that scrambles the letters in an array making shoulder surfing obsolete. If you have a Windows, Mac, or Linux computer with Internet
+                access and wish to protect your password, then the Mess Matrix is for you!</p></h4>
+
+             <p><h2><b>Detailed Description</b></h2></p>
+             <h4><p>The Mess Matrix is a security log-in application that will allow users to protect themselves against an observer attempting to steal a password at login. A 6 x 6 matrix
+                is displayed on screen filled by random characters from [a - z] , [A - Z] , and [0 - 9]. The user can refresh the display or confirm that his or her current password letter is present until
+                the password is complete. Through using a matrix-based approach, our application will provide a better security to deter shoulder surfing
+                attacks, since users will utilize a mouse to confrim their passwords rather than typing on a keyboard. </p></h4>
+
+            <!--Insert team info here-->
+            <p><h2><b>The Team</b></h2></p>
+
+            <h3>Team Leader </h3>
+            <h4>Skyler Knecht</h4>
+            <h5><p>[insert bio here with pic]....responsible for organizing team meetings, heading the project</p></h5>
+
+            <h3>Configuration Management Specialist </h3>
+            <h4>Mike Jeromin</h4>
+            <span class="left"><img src="style/mikePicture.jpeg" alt="Mike Pic" style="width:90px;height:130px;"></span>
+            <h5><p>Mike is currently a senior that is enrolled at the University of Mount Union pursuing a Bachelor's degree in Computer Science with
+              an accompanying minor of Business Administration. At Mount, he is apart of many extracurricular activities such as the Men's Swim Team,
+              Alpha Lambda Delta, and Phi Kappa Tau.  Within our team the Mess, Mike keeps source code, documentation, files, etc. up-to-date and coordinated
+              so that the Mess can be on schedule to finish their product at a well planned out pace. </p></h5>
+
+            <h3>Architect </h3>
+            <h4>Sam Jones</h4>
+            <span class="left"><img src="style/samPic.jpg" alt="Sam Pic" style="width:240px;height:150px;"></span>
+            <h5><p> Sam is a Senior that is enrolled at the University of Mount Union pursuing a Bachelor's degree in Multi-Platform Software Development with
+              a minor in National Security and Foreign Analysis (mouthful). Here at Mount, Sam is apart of several extracurricular activities such as Varsity Football, Bible Study,
+              and the Black Student Union. Within The Mess, Sam is the Lead Architect and in charge of making design outline for the front-end of the software.
+              </p></h5>
+
+            <h3>Lead Tester </h3>
+            <h4>Ebraheem Aldubis</h4>
+            <h5><p>Ebraheem is student at the University of Mount Union pursuing a Bachelor's degrees in Computer Information Systems
+              and Art studio majors. At the University of Mount Union, Aldubis helped organize many Art events in the
+               Sally Otto Art Gallery, such as the students show. In the Mess team, Aldubis is responsible for the graphical part of the
+                project and testing the project to make sure that every thing works perfectly by 
+              designing test data suites and measuring quality.</p></h5>
+
+          </div>
+      </div>
+
+
+    <div id="content_footer"></div>
+
+    <div id="footer">
+        <p><a href="index.html">Home</a> | <a href="contact.html">Contact Us</a> |  <a href="about.html">About</a> |<a href="loginpage.html">The Mess Log In</a></p>
+        <p>&copy The Mess 2019 </p>
+    </div>
+
+  </div>
+</body>
+</html>

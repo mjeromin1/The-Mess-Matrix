@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head runat="server">
+    <title>The Mess Log In</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+<!--This is the header info-->
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="loginpage.html"><strong>The Mess Matrix Log In</strong></span></a></h1>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li><a href="index">Home</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="about">About</a></li>
+                    <li class="selected"><a href="loginpage.html"> The Mess Login Page</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--This is the log in form-->
+
+<div class = "user-box">
+    <h2><b>Login</b></h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for help, message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    {% block content %} {% endblock %}
+    <form method="POST" action="/loginpage">
+        {{ form.hidden_tag() }}
+        {{ form.username(class="textbox", placeholder="Enter Username")}}
+        {{ form.password(class="textbox", placeholder="Enter Password")}}
+        <button name="submit_button" type="submit" class="login_button" value="Normal Login">Normal Login</button>
+        <button name="submit_button" type="submit" class="login_button" value="Matrix Login">Matrix Login</button>
+    </form>
+    <h5>*Mess Matrix Sign In does not need password field filled out.</h5>
+
+
+    <a href="NewUserPage.html">Create New User</a>
+</div>
+</body>
+<!--Footer info-->
+
+
+</html>

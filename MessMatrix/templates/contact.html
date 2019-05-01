@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="contact.html"><strong>Contact Us</strong></span></a></h1>
+          <h2></h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index">Home</a></li>
+          <li class="selected"><a href="contact">Contact Us</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="loginpage"> The Mess Login Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+
+      </div>
+
+
+
+      <div id="content">
+        <!-- insert the page content here -->
+
+        <h4><p>Have questions about our product, pricing, security, implementation or anything else?
+            Fill out the form below, and we’ll be in touch soon.</p>
+          </h4>
+          <div class="form_settings">
+            <h4><p><span>Name</span><input class="contact" type="text" name="your_name" value="" /></p></h4>
+            <h4><p><span>Email Address</span><input class="contact" type="text" name="your_email" value="" /></p></h4>
+            <h4><p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p></h4>
+            <p style="padding-top: 15px" ><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Submit" /></p>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+            <h5><b>Headquarters: </b>University of Mount Union 1972 Clark Ave, Alliance, OH 44601</h5>
+            <h5><b>Email: </b>theMessyBois@gmail.com</h5>
+      </div>
+    </div>
+
+    <div id="content_footer"></div>
+      <div id="footer">
+        <p><a href="index.html">Home</a> | <a href="contact.html">Contact Us</a> | <a href="about.html">About</a> | <a href="loginpage.html">The Mess Log In</a></p>
+        <p>&copy The Mess 2019 </p>
+      </div>
+  </div>
+
+</body>
+</html>
